@@ -1,6 +1,6 @@
 {
   "name": "chatgpt",
-  "version": "4.5.1",
+  "version": "4.6.0",
   "description": "Node.js client for the unofficial ChatGPT API.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "repository": "transitive-bullshit/chatgpt-api",
@@ -21,6 +21,7 @@
   "engines": {
     "node": ">=14"
   },
+  "bin": "cli.js",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -36,7 +37,7 @@
   },
   "dependencies": {
     "eventsource-parser": "^0.0.5",
-    "gpt-3-encoder": "^1.1.4",
+    "gpt3-tokenizer": "^1.1.5",
     "keyv": "^4.5.2",
     "p-timeout": "^6.0.0",
     "quick-lru": "^6.1.1",
